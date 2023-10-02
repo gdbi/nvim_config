@@ -12,28 +12,30 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.gopls.setup({
+lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
     gopls = {
       analyses = {
+        nilness = true,
         unusedparams = true,
+        unusedwrite = true,
+        useany = true,
       },
-      staticcheck = true,
+      experimentalPostfixCompletions = true,
       gofumpt = true,
+      staticcheck = true,
+      usePlaceholders = true,
     },
   },
-})
+}
 
--- Without the loop, you would have to manually set up each LSP 
--- 
--- lspconfig.html.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
---
--- lspconfig.cssls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
+lspconfig.clangd.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
+}

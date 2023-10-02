@@ -44,6 +44,9 @@ local default_plugins = {
     end,
   },
 
+  --[[
+  --GAGAN, not required
+  --
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
@@ -53,7 +56,7 @@ local default_plugins = {
       dofile(vim.g.base46_cache .. "devicons")
       require("nvim-web-devicons").setup(opts)
     end,
-  },
+  },]]
 
   {
     "lukas-reineke/indent-blankline.nvim",
@@ -115,7 +118,7 @@ local default_plugins = {
     end,
   },
 
-  -- lsp stuffa
+  -- lsp stuff
   -- GAGAN
   --[[
   {
@@ -194,6 +197,7 @@ local default_plugins = {
       require("cmp").setup(opts)
     end,
   },
+ 
 
   {
     "numToStr/Comment.nvim",
