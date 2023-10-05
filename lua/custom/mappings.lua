@@ -27,6 +27,7 @@ M.abc = {
     ["<leader>d"] = {":Neotree document_symbols<CR>", "change Neotree to tagList"},
     ["<leader>b"] = {":Neotree buffers<CR>", "change Neotree to buffers"},
     ["<leader>n"] = {":Neotree filesystem<CR>", "change Neotree to file_system"},
+    ["<leader>fg"] = {":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"},
   },
 }
 
