@@ -113,6 +113,11 @@ local plugins =
       require("telescope").load_extension("live_grep_args")
     end
   },
+
+  {
+    "RRethy/vim-illuminate",
+    lazy = false,
+  },
 }
 
 return plugins
