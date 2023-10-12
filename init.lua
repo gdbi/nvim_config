@@ -18,4 +18,8 @@ end
 
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
+
+--vim.cmd([[hi def IlluminatedWordText guibg=Gray]])
+--vim.cmd([[hi def IlluminatedWordRead guibg=DarkGray]])
+--vim.cmd([[hi def IlluminatedWordWrite guibg=DarkGray]])
 require "plugins"
