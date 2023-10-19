@@ -35,6 +35,7 @@ M.abc = {
       end,
       "Close buffer",
     },
+    ["<C-E>"] = {":EasyBuffer<CR>", "Open Easybuffer"},
   },
   i = {
     ["<Esc>"] = {"<ESC>","just escape"},
