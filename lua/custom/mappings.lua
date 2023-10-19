@@ -29,6 +29,12 @@ M.abc = {
     ["<leader>n"] = {":Neotree filesystem toggle<CR>", "change Neotree to file_system"},
     ["<leader>fg"] = {":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"},
     ["<Esc>"] = {"<ESC>","just escape"},
+    ["<C-x>"] = {
+      function()
+        require("nvchad.tabufline").close_buffer()
+      end,
+      "Close buffer",
+    },
   },
   i = {
     ["<Esc>"] = {"<ESC>","just escape"},
