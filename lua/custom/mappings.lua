@@ -36,6 +36,7 @@ M.abc = {
       "Close buffer",
     },
     ["<C-E>"] = {":EasyBuffer<CR>", "Open Easybuffer"},
+    ["zz"] = {"zf%", "Create fold"},
   },
   i = {
     ["<Esc>"] = {"<ESC>","just escape"},
