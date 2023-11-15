@@ -28,6 +28,7 @@ M.abc = {
     ["<leader>b"] = {":Neotree buffers<CR>", "change Neotree to buffers"},
     ["<leader>n"] = {":Neotree filesystem toggle<CR>", "change Neotree to file_system"},
     ["<leader>fg"] = {":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"},
+    ["<leader>fs"] = {":lua require('telescope.builtin').grep_string()<CR>"},
     ["<Esc>"] = {"<ESC>","just escape"},
     ["<C-x>"] = {
       function()
